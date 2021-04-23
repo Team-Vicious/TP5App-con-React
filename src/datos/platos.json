@@ -1,0 +1,54 @@
+{
+    "platos": [
+        {
+            "id":"1",
+            "nombre":"Pizza Especial",
+            "precio":"120",
+            "envio" : "g",
+            "rubro":"Comidas",
+            "imagenPath":"pizza-especial.jpg",
+            "vendidos" : "600",
+            "ingredientes":["Queso Muzzarella","Jamon Cocido","Tomate", "Morron"]
+        },
+        {
+            "id":"2",
+            "nombre":"Empanadas Docena",
+            "precio":"120",
+            "envio" : "500",
+            "rubro":"Comidas",
+            "imagenPath":"empanadas.jpg",
+            "vendidos" : "56",
+            "ingredientes":["Carne Molida","Cebolla","Pimiento"]
+        },
+        {
+            "id":"3",
+            "nombre":"Lomo Completo",
+            "precio":"120",
+            "envio" : "g",
+            "rubro":"Comidas",
+            "imagenPath":"lomo-completo.jpg",
+            "vendidos" : "213",
+            "ingredientes":["Pan", "Lomo","Queso","Tomate", "Lechuga", "Huevo", "Condimentos"]
+        },
+        {
+            "id":"4",
+            "nombre":"Mini Hamburguesa",
+            "precio":"120",
+            "envio" : "g",
+            "rubro":"Comidas",
+            "imagenPath":"hamburguesa.jpg",
+            "vendidos" : "23",
+            "ingredientes":["Pan", "Carne Molida","Queso","Tomate", "Lechuga"]
+        },
+        {
+            "id":"5",
+            "nombre":"Cerveza Deibeer",
+            "precio":"140",
+            "envio" : "300",
+            "rubro":"Bebidas",
+            "imagenPath":"cerveza.jpg",
+            "vendidos" : "98",
+            "ingredientes":["Cebada","Agua","Lupulo"]
+        }
+    ]
+}

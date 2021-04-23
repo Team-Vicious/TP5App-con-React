@@ -1,31 +1,24 @@
-import React from 'react';
-import logo from './assets/images/logo.svg';
-import './assets/css/App.css'
-import MiComponente from './components/MiComponente';
+import React, {Component} from 'react';
+import Productos from './components/Productos';
+import { Switch, Route } from 'react-router-dom';
+import DondeEstamos from './components/DondeEstamos';
+import DetallePlato from './components/DetallePlato';
+import Home from './components/Home';
 
-
-
-function mensajeHolaMundo(mensaje) {
-  return mensaje.toUpperCase();
-}
-
-function App() {
-  var mensaje = 'Hola Mundo';
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {mensajeHolaMundo(mensaje)}
-      </header>
-      
-      <React.Fragment>
-        <MiComponente textoH2="Propiedad textoH2" textoH3="Propiedad textoH3"></MiComponente>
-        <h2>Titulo Aplicando Etiqueta H2</h2>
-      </React.Fragment>
-      
+class App extends Component{
     
-    </div>
-
-  );
+  
+  render(){
+    return(
+      <Switch>
+        <Route exact path="/" component={Home} ></Route>
+        <Route exact path="/home" component={Home} ></Route>
+        <Route path="/dondeEstamos" component={DondeEstamos} ></Route>
+        <Route path="/productos" component={Productos} ></Route>
+        <Route path="/detallePlato/:id" component={DetallePlato} ></Route>
+      </Switch>
+    ) 
+  }
 }
+
 export default App;

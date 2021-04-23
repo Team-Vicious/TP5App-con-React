@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.maxAltoImg{
+  max-height: 180px;
+}
+
+.margenesTarjeta{
+  margin: 1em;
+}
+
+.minAltoImg{
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 400px;
+  max-width: 400px;
+}
