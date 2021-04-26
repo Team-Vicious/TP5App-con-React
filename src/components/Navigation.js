@@ -10,17 +10,12 @@ class Navigation extends Component{
     render(){
         return (
             <React.Fragment>
-             <Navbar bg="primary" variant="dark">
-              <Navbar.Brand href="/home">INICIO</Navbar.Brand>
+             <Navbar bg="primary" variant="dark" style={{height:'130px', fontSize: 20}}>
+              <Navbar.Brand href="/home">HOME</Navbar.Brand>
               <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/dondeEstamos">Donde Estamos</Nav.Link>
                 <Nav.Link href="/productos">Productos</Nav.Link>
               </Nav>
-              <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-light">Search</Button>
-              </Form>
             </Navbar>
           </React.Fragment>
             
