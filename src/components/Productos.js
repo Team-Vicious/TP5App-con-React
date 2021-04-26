@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Navigation from './Navigation';
-import {platos} from '../datos/platos.json';
+import {instrumentos} from '../datos/instrumentos.json';
 import Fila from './Fila';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -10,14 +10,13 @@ class Productos extends Component{
   constructor(){
     super();
     this.state = {
-      platos
+      instrumentos
     }
   }
 
   render(){
-    const platos = this.state.platos.map((plato, i)=>{return (
-      //<div>{plato.nombre}</div>
-      <Fila key={plato.id} id={plato.id} nombre={plato.nombre} precio={plato.precio} rubro={plato.rubro} envio={plato.envio} vendidos={plato.vendidos} imagenPath={plato.imagenPath}></Fila>
+    const instrumentos = this.state.instrumentos.map((instrumento, i)=>{return (
+      <Fila key={instrumento.id} id={instrumento.id} nombre={instrumento.instrumento} precio={instrumento.precio} marca={instrumento.marca} modelo={instrumento.modelo} envio={instrumento.costoEnvio} vendidos={instrumento.cantidadVendida} imagenPath={instrumento.imagen}></Fila>
     )
   })
     return (
@@ -25,7 +24,7 @@ class Productos extends Component{
           <Navigation></Navigation>
           <Container fluid="md">
               <Row>
-              {platos}
+              {instrumentos}
               </Row>
           </Container>
       </React.Fragment>

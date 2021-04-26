@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+
+
 
 class Fila extends Component{
     
-    envio(precio) {
+    envio(envio) {
         
-        if (precio == 'g') {
+        if (envio == 'G') {
             
             
             return true;
@@ -49,7 +50,7 @@ class Fila extends Component{
                         <tr>
                             <td >
                                 <Card  style={img} className="margenesTarjeta">
-                                    <a href={`detallePlato/${this.props.id}`}>
+                                    <a href={`detalleInstrumento/${this.props.id}`}>
                                         <Card.Img  className="maxAltoImg" src={require(`../assets/images/${this.props.imagenPath.toLowerCase()}` ).default }  />
                                         
                                     </a>
@@ -58,7 +59,7 @@ class Fila extends Component{
 
                             <td style={pos} >
                                 <tr>
-                                    <a style={style} href={`detallePlato/${this.props.id}`} >{this.props.nombre}</a>
+                                    <a style={style} href={`detalleInstrumento/${this.props.id}`} >{this.props.nombre}</a>
                                 </tr>
                                 <tr>
                                     <a style={{fontSize: 30,fontFamily: "Helvetica"}}>
