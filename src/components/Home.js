@@ -11,7 +11,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Navigation></Navigation>
-                <body style={{ fontSize: 20, fontFamily: "Helvetica", padding: '30px 0px 0px 15px ',width:'110rem',  display: "flex", justifyContent: "center", alignItems: "center"}} >
+                <body style={{ fontSize: 20, fontFamily: "Helvetica", padding: '30px 0px 0px 60px ',width:'80rem',  display: "center", justifyContent: "center", alignItems: "center"}} >
                    
                     <a>
                         <Jumbotron fluid>
@@ -26,7 +26,7 @@ class Home extends Component {
                                 <p style={{padding: '20px'}}>
                                 <Button variant="success" href="/productos">conoce nuestros productos</Button>
                                 </p>
-                                 <Card.Img style={{height:'595px' ,width:'1068px',}} src={require(`../assets/images/local.jpg` ).default }  /> 
+                                 <Card.Img style={{height:'700px' ,width:'1220px',}} src={require(`../assets/images/local.jpg` ).default }  /> 
                         </Jumbotron>
                     </a>
                    
